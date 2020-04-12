@@ -13,7 +13,8 @@ void main() {
     );
   }
 
-  testWidgets('Core widget should contain a floating action button', (WidgetTester tester) async {
+  testWidgets('Core widget should contain a floating action button',
+      (WidgetTester tester) async {
     await tester.pumpWidget(_coreWidget(tester));
 
     final Finder fabFinder = find.byType(FloatingActionButton);
