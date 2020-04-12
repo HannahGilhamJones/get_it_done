@@ -10,7 +10,7 @@ class CoreAppBar extends StatelessWidget {
   final Screens.Tabs activeTab;
 
   CoreAppBar(this.activeTab, {Key key}) : super(key: key);
-  
+
   @override
   Widget build(BuildContext context) {
     return BottomAppBar(
@@ -23,16 +23,15 @@ class CoreAppBar extends StatelessWidget {
     );
   }
 
-  IconButton _iconButton(BuildContext context, Screens.Tabs activeTab, Screens.TabDetails tabDetail) {
+  IconButton _iconButton(BuildContext context, Screens.Tabs activeTab,
+      Screens.TabDetails tabDetail) {
     return IconButton(
-      icon: tabDetail.icon,
-      color: activeTab == tabDetail.tab
-        ? Theme.of(context).indicatorColor
-        : Theme.of(context).iconTheme.color,
-      onPressed: () => {
-        BlocProvider.of<TabBloc>(context).add(TabUpdated(tabDetail.tab))
-      }
-    );
+        icon: tabDetail.icon,
+        color: activeTab == tabDetail.tab
+            ? Theme.of(context).indicatorColor
+            : Theme.of(context).iconTheme.color,
+        onPressed: () =>
+            {BlocProvider.of<TabBloc>(context).add(TabUpdated(tabDetail.tab))});
   }
 
   List<Widget> _iconButtons(BuildContext context, Screens.Tabs activeTab) {

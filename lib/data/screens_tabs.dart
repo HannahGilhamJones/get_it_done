@@ -13,16 +13,20 @@ class TabDetails {
   final Icon icon;
   final Tabs tab;
 
-  TabDetails(this.icon, { this.tab });
+  TabDetails(this.icon, {this.tab});
 }
 
 final List<TabDetails> tabDetails = <TabDetails>[
   TabDetails(
-    Icon(Icons.list, semanticLabel: AppText.todosScreen,),
-    tab: Tabs.todos
-  ),
+      Icon(
+        Icons.list,
+        semanticLabel: AppText.todosScreen,
+      ),
+      tab: Tabs.todos),
   TabDetails(
-    Icon(Icons.show_chart, semanticLabel: AppText.statsScreen,),
-    tab: Tabs.stats
-  ),
+      Icon(
+        Icons.show_chart,
+        semanticLabel: AppText.statsScreen,
+      ),
+      tab: Tabs.stats),
 ];

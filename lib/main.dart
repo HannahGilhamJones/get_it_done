@@ -19,16 +19,13 @@ void main() {
 class GetItDone extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: AppText.appName,
-      routes: {
-        Routes.home: (BuildContext context) {
-          return BlocProvider<TabBloc>(
-            create: (BuildContext context) => TabBloc(),
-            child: HomeScreen(),
-          );
-        }
+    return MaterialApp(title: AppText.appName, routes: {
+      Routes.home: (BuildContext context) {
+        return BlocProvider<TabBloc>(
+          create: (BuildContext context) => TabBloc(),
+          child: HomeScreen(),
+        );
       }
-    );
+    });
   }
 }
