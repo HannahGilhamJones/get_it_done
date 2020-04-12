@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:get_it_done/bloc/tab/tab_bloc.dart';
-import 'package:get_it_done/bloc/tab/tab_event.dart';
 
 import 'package:get_it_done/config/routes.dart';
 
