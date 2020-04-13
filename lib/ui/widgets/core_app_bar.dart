@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'package:get_it_done/bloc/tab/tab_bloc.dart';
-import 'package:get_it_done/bloc/tab/tab_event.dart';
+import 'package:get_it_done/tab/bloc/tab_bloc.dart';
+import 'package:get_it_done/tab/bloc/tab_event.dart';
 
-import 'package:get_it_done/data/screens_tabs.dart' as Screens;
+import 'package:get_it_done/tab/screens_tabs.dart';
+
+import 'package:get_it_done/tab/tab_details.dart';
 
 class CoreAppBar extends StatelessWidget {
-  final Screens.Tabs activeTab;
+  final Tabs activeTab;
 
   CoreAppBar(this.activeTab, {Key key}) : super(key: key);
 
@@ -23,8 +25,8 @@ class CoreAppBar extends StatelessWidget {
     );
   }
 
-  IconButton _iconButton(BuildContext context, Screens.Tabs activeTab,
-      Screens.TabDetails tabDetail) {
+  IconButton _iconButton(BuildContext context, Tabs activeTab,
+      TabDetails tabDetail) {
     return IconButton(
         icon: tabDetail.icon,
         color: activeTab == tabDetail.tab
@@ -34,9 +36,9 @@ class CoreAppBar extends StatelessWidget {
             {BlocProvider.of<TabBloc>(context).add(TabUpdated(tabDetail.tab))});
   }
 
-  List<Widget> _iconButtons(BuildContext context, Screens.Tabs activeTab) {
+  List<Widget> _iconButtons(BuildContext context, Tabs activeTab) {
     List<Widget> list = <Widget>[];
-    Screens.tabDetails.forEach((Screens.TabDetails tabDetail) {
+      tabDetails.forEach((TabDetails tabDetail) {
       list.add(_iconButton(context, activeTab, tabDetail));
     });
     return list;

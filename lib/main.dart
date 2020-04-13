@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:get_it_done/bloc/diagnostic_bloc_delegate.dart';
-import 'package:get_it_done/bloc/tab/tab_bloc.dart';
+import 'package:get_it_done/tab/bloc/tab_bloc.dart';
 import 'package:get_it_done/task/bloc/tasks_bloc.dart';
 import 'package:get_it_done/task/bloc/tasks_event.dart';
 

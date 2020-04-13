@@ -1,13 +1,6 @@
 import 'package:flutter/material.dart';
-
 import 'package:get_it_done/data/app_text.dart';
-
-enum Tabs {
-  stats,
-  todos,
-}
-
-const Tabs initialScreen = Tabs.todos;
+import 'package:get_it_done/tab/screens_tabs.dart';
 
 class TabDetails {
   final Icon icon;

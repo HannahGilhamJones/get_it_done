@@ -1,8 +1,8 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'package:get_it_done/bloc/tab/tab_event.dart';
+import 'package:get_it_done/tab/bloc/tab_event.dart';
 
-import 'package:get_it_done/data/screens_tabs.dart' as Screens;
+import 'package:get_it_done/tab/screens_tabs.dart' as Screens;
 
 class TabBloc extends Bloc<TabEvent, Screens.Tabs> {
   @override

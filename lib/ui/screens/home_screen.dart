@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'package:get_it_done/bloc/tab/tab_bloc.dart';
-
 import 'package:get_it_done/config/routes.dart';
 
 import 'package:get_it_done/data/app_text.dart';
-import 'package:get_it_done/data/screens_tabs.dart' as Screens;
+import 'package:get_it_done/tab/bloc/tab_bloc.dart';
+import 'package:get_it_done/tab/screens_tabs.dart' as Screens;
 
 import 'package:get_it_done/ui/screens/stats_screen.dart';
 import 'package:get_it_done/ui/screens/task_screen.dart';
