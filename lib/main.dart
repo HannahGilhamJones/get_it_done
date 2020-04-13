@@ -3,8 +3,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:get_it_done/bloc/diagnostic_bloc_delegate.dart';
 import 'package:get_it_done/bloc/tab/tab_bloc.dart';
-import 'package:get_it_done/bloc/task/tasks_bloc.dart';
-import 'package:get_it_done/bloc/task/tasks_event.dart';
+import 'package:get_it_done/task/bloc/tasks_bloc.dart';
+import 'package:get_it_done/task/bloc/tasks_event.dart';
 
 import 'package:get_it_done/config/routes.dart';
 

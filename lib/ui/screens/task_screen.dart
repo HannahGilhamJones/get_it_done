@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:get_it_done/bloc/task/tasks_bloc.dart';
-import 'package:get_it_done/bloc/task/tasks_state.dart';
-import 'package:get_it_done/model/task.dart';
+import 'package:get_it_done/task/bloc/tasks_bloc.dart';
+import 'package:get_it_done/task/bloc/tasks_state.dart';
+import 'package:get_it_done/task/task_model.dart';
 
 class TaskScreen extends StatelessWidget {
   TaskScreen({Key key}) : super(key: key);

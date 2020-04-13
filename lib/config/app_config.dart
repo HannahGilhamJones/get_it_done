@@ -1,4 +1,4 @@
-import 'package:get_it_done/repository/task_repository.dart';
+import 'package:get_it_done/task/task_repository.dart';
 
 class AppConfig {
   static final String storage = 'localStorage';

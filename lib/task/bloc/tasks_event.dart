@@ -1,6 +1,6 @@
 import 'package:equatable/equatable.dart';
 
-import 'package:get_it_done/model/task.dart';
+import 'package:get_it_done/task/task_model.dart';
 
 abstract class TasksEvent extends Equatable {
   const TasksEvent();

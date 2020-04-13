@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:get_it_done/entity/task.dart';
+import 'package:get_it_done/task/task_entity.dart';
 
 abstract class TaskRepository {
   Future<void> addNewTask(TaskEntity task);

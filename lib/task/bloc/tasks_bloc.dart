@@ -1,15 +1,15 @@
 import 'dart:async';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:get_it_done/mapper/task_mapper.dart';
+import 'package:get_it_done/task/task_mapper.dart';
 
-import 'package:get_it_done/model/task.dart';
+import 'package:get_it_done/task/task_model.dart';
 
 import 'package:meta/meta.dart';
 
-import 'package:get_it_done/bloc/task/tasks_event.dart' as Event;
-import 'package:get_it_done/bloc/task/tasks_state.dart' as State;
-import 'package:get_it_done/repository/task_repository.dart';
+import 'package:get_it_done/task/bloc/tasks_event.dart' as Event;
+import 'package:get_it_done/task/bloc/tasks_state.dart' as State;
+import 'package:get_it_done/task/task_repository.dart';
 
 class TasksBloc extends Bloc<Event.TasksEvent, State.TasksState> {
   final TaskRepository taskRepository;

@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:get_it_done/entity/task.dart';
+import 'package:get_it_done/task/task_entity.dart';
 
 import 'package:uuid/uuid.dart';
 
